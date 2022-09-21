@@ -1,0 +1,27 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/TaxBlock.Core.API/obj
+/TaxBlock.Core.AuthenticationService/bin/Debug/net6.0
+/TaxBlock.Core.AuthenticationService/.vs/TaxBlock.Core.AuthenticationService/v17
+/TaxBlock.Core.AuthenticationService/obj
+/TaxBlock.Core.Repository/obj
+/TaxBlock.Core.Shared/obj
+/TaxBlock.Core.Repository/bin/Debug/net6.0
+/TaxBlock.Core.Shared/bin/Debug/net6.0
+/TaxBlock.Core.API/bin/Debug/net6.0
+
+/TaxBlock.Core.UI/TaxBlock.Client/node_modules
+/TaxBlock.Core.UI/TaxBlock/.vscode
+/TaxBlock.Core.API/bin/Release/net6.0
+/TaxBlock.Core.API/Properties/PublishProfiles
+/TaxBlock.Core.Repository/bin/Release/net6.0
+/TaxBlock.Core.Shared/bin/Release/net6.0
+/TaxBlock.Core.API/TaxBlock.Core.API.csproj.user
+/Taxblock.POI.API/bin/Debug/net6.0
+/Taxblock.POI.API/obj/Debug/net6.0
+/TaxBlock.POI.Repository/bin/Debug/net6.0
+/TaxBlock.POI.Repository/obj
+/Taxblock.POI.API/obj
