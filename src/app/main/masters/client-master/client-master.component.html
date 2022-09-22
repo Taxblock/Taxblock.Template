@@ -1,0 +1,155 @@
+<div class="card">
+	<div class="card-header">
+		<h4>Client Master</h4>
+	</div>
+	<div class="card-body mt-2">
+		<div class="content-wrapper container-xxl p-0">
+			<div class="content-body">
+				<section id="home-page">
+					<form [formGroup]="clientMasterForm">
+                        
+                        <input
+                        hidden
+                        class="form-control"
+                        type="text"
+                        formControlName="UserId"
+                        placeholder="UserId"
+                    />
+
+
+						<div class="mt-3">
+							<div class="row">
+								<div class="col-sm-4 form-group">
+									<label>User Name</label>
+									<input
+										class="form-control"
+										type="text"
+										formControlName="FName"
+										placeholder="FName"
+									/>
+                                    
+									<!-- <span
+										class="text-danger"
+										*ngIf="
+											clientMasterForm.get('UserName').invalid &&
+											clientMasterForm.get('UserName').touched
+										"
+										>User Name is Required</span
+									> -->
+								</div>
+								<div class="col-sm-4 form-group">
+									<label>Password</label>
+									<input
+										class="form-control"
+										type="text"
+										formControlName="PasswordHash"
+										placeholder="PasswordHash"
+									/>
+									<!-- <span
+										class="text-danger"
+										*ngIf="
+											clientMasterForm.get('Password').invalid &&
+											clientMasterForm.get('Password').touched
+										"
+										>Country code is Required</span
+									> -->
+								</div>
+
+                                <div class="col-sm-4 form-group">
+									<label>Organization Name</label>
+									<input
+										class="form-control"
+										type="text"
+										formControlName="CompanyName"
+										placeholder="CompanyName"
+									/>
+									<!-- <span
+										class="text-danger"
+										*ngIf="
+											clientMasterForm.get('OrganizationName').invalid &&
+											clientMasterForm.get('OrganizationName').touched
+										"
+										>Organization Name is Required</span
+									> -->
+								</div>
+
+                                <div class="col-sm-4 form-group">
+									<label>Display Name</label>
+									<input
+										class="form-control"
+										type="text"
+										formControlName="CorporateName"
+										placeholder="CorporateName"
+									/>
+									<!-- <span
+										class="text-danger"
+										*ngIf="
+											clientMasterForm.get('DisplayName').invalid &&
+											clientMasterForm.get('DisplayName').touched
+										"
+										>Organization Name is Required</span
+									> -->
+								</div>
+
+                                <div class="col-sm-4 form-group">
+									<label>Contact Number</label>
+									<input
+										class="form-control"
+										type="text"
+										formControlName="MobileNo"
+										placeholder="MobileNo"
+									/>
+									<!-- <span
+										class="text-danger"
+										*ngIf="
+											clientMasterForm.get('ContactNumber').invalid &&
+											clientMasterForm.get('ContactNumber').touched
+										"
+										>Contact Number is Required</span
+									> -->
+								</div>
+
+                                <div class="col-sm-4 form-group">
+									<label>Email Id</label>
+									<input
+										class="form-control"
+										type="text"
+										formControlName="EmailId"
+										placeholder="EmailId"
+									/>
+									<!-- <span
+										class="text-danger"
+										*ngIf="
+											clientMasterForm.get('EmailId').invalid &&
+											clientMasterForm.get('EmailId').touched
+										"
+										>Email Id is Required</span
+									> -->
+								</div>
+
+
+								<div class="col-sm-4 mt-2" style="text-align: right">
+									<button
+										type="submit"
+										rippleEffect
+										class="btn btn-primary mr-1"
+										(click)="OnSaveClientMaster()"
+									>
+										Submit
+									</button>
+									<button
+										type="reset"
+										rippleEffect
+										class="btn btn-outline-secondary"
+									>
+										Reset
+									</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</section>
+			</div>
+		</div>
+	</div>
+</div>

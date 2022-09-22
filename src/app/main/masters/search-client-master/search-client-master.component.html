@@ -1,0 +1,72 @@
+<div class="card">
+
+    <div class="card-header">
+        <button class="icon" [routerLink]="['/masters/client-master']" title="Add New Employee,Designation and Target">
+            <i class="fa fa-plus"></i>
+        </button>
+        <h5>Employee Master</h5>
+    </div>
+    <div class="card-body mt-3">
+        <div class="content-wrapper container-xxl p-0">
+            <div class="content-body">
+                <section id="home-page">
+                    <form [formGroup]="searchEmployeeMasterForm">
+                        <div class="row">
+                            <div class="col-sm-3 form-group">
+                                <label>First Name</label>
+                                <input class="form-control" type="text" formControlName="Fname"
+                                    placeholder="First Name">
+                            </div>
+
+                            <div class="col-sm-3 form-group">
+                                <label>Last Name</label>
+                                <input type="text" class="form-control" formControlName="Lname"
+                                    placeholder="Last Name" />
+                            </div>
+
+                            <div class="col-sm-3 form-group">
+                                <label>Email-Id</label>
+                                <input type="text" class="form-control" formControlName="EmailId"
+                                    placeholder="Email-Id" />
+                            </div>
+                            <div class="col-sm-3 form-group mt-2">
+                                <button type="submit" rippleEffect class="btn btn-primary mr-1"
+                                    (click)="onSearch_Click()">
+                                    Search
+                                </button>
+                            </div>
+                        </div>
+                        <b>{{message}}</b>
+                        
+                        <table id="example" datatable [dtOptions]="dtOptions"  #dTable
+                            class="cell-border responsive  hover table-bordered table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Email ID</th>
+                                    <th>First name</th>
+                                    <th>Last name</th>
+                                    <th>Mobile</th>
+                                    <th>DOB</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let person of employeeDetailsList">
+                                    <td>{{ person.emailId }}</td>
+                                    <td>{{ person.fName }}</td>
+                                    <td>{{ person.lName }}</td>
+                                    <td>{{ person.mobileNo }}</td>
+                                    <td>{{ person.dob }}</td>
+                                    <td>
+                                        <i class="feather icon-edit-2 font-medium-2 buttonClass cursor-pointer p-1"></i>
+                                        <i class="feather icon-delete font-medium-2 buttonClass-delete cursor-pointer p-1"></i>
+                                </tr>
+                            </tbody>
+                        </table>
+                    
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>

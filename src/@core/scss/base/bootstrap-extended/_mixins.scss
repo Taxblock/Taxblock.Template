@@ -1,0 +1,13 @@
+//  ===============================================================================================
+//  File Name: mixins.scss
+//  Description: Extended mixins file with new mixins features.
+//  ----------------------------------------------------------------------------------------------
+//  Item Name: TaxBlock - Vuejs, React, Angular, HTML & Laravel Admin Dashboard Template
+//  Author: TaxBlock
+//  Author URL: http://www.themeforest.net/user/TaxBlock
+//  ================================================================================================
+
+@import 'mixins/_type'; //(NEW)
+
+// Components
+@import 'mixins/_navs';

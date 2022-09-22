@@ -1,0 +1,6 @@
+/* Role Master */
+.role-master-menu-treeview {
+    margin-left: -15px;
+    height: 200px;
+    overflow-y: scroll;
+  }
